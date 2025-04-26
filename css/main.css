@@ -82,7 +82,12 @@ nav {
     font-family: Playfair Display, serif;
     font-size: 19px;
     font-weight: 600;
+    overflow-wrap: break-word; /* переносит длинные слова */
+    word-wrap: break-word; /* для старых браузеров */
+    hyphens: auto; /* ставит дефисы при переносе слов */
 }
+
+
 .recipe-img {
     width: 100%;
     border-radius: 26px;
