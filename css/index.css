@@ -155,12 +155,12 @@ main {
     display: flex; /* делаем карточку флекс-контейнером */
     flex-direction: column; /* размещаем элементы вертикально */
     justify-content: start; /* чтобы всё шло сверху */
-    min-height: 220px;
+    min-height: 250px;
 }
 .like-icon{
     width: 2.2vw;
     height: 2.2vw;
-    margin-top: 2px;
+    margin-top: 0.1vw;
 }
 
 .recipe-img {
@@ -178,28 +178,34 @@ main {
 
 .about-us {
     background-color: #ffffff;
-    padding: 70px 210px;
+    /*padding: 70px 210px;*/
+    padding: 9vw 15vw;
     display: flex;
     justify-content: center;
 }
 
 .about-us-text {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: justify;
     width: 50%;
-    padding-right: 30px;
-    gap: 20px;
+    /*padding-right: 30px;*/
+    /*gap: 20px;*/
+    padding-right: 3vw;
+    gap: 1vw;
 }
 
 .section-title {
     color: #CFA557;
     font-family: Kaliningrad Historical G, serif;
     font-weight: 400;
-    font-size: 70px;
-    margin-bottom: 20px;
+    /*font-size: 70px;*/
+    /*margin-bottom: 20px;*/
+    font-size: 5vw;
+    margin-bottom: 2vw;
 }
 
 .about-us-text .cursive-main {
@@ -211,7 +217,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 60px;
+    /*padding-left: 60px;*/
+    padding-left: 4vw;
     height: 100%;
 }
 
@@ -231,7 +238,8 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    /*gap: 20px;*/
+    gap: 1.1vw;
 }
 
 .features {
@@ -245,19 +253,23 @@ main {
 
 .catalog-btn2 {
     text-decoration: none;
-    padding: 13px 63px;
+    padding: 0.8vw 3vw;
     color: rgb(202, 145, 24);
     font-family: Playfair Display, serif;
-    font-size: 25px;
+    /*font-size: 25px;*/
+    font-size: 1.5vw;
     font-weight: 500;
-    border: 3px solid rgb(231, 178, 62);
-    border-radius: 100px;
+    border: 0.2vw solid rgb(231, 178, 62);
+    /*border: 3px solid rgb(231, 178, 62);*/
+    /*border-radius: 100px;*/
+    border-radius: 2.4vw;
     background: rgb(255, 255, 255);
-    box-shadow: 5px 10px 40px 0 rgba(131, 129, 129, 0.25);
+    /*box-shadow: 5px 10px 40px 0 rgba(131, 129, 129, 0.25);*/
+    box-shadow: 0.5vw 1vw 3vw rgba(131, 129, 129, 0.25);
 }
 
 .catalog-btn-wrapper2 {
-    margin-top: 50px;
+    margin-top: 5vw;
 }
 
 .text-highlight2 {
@@ -267,11 +279,14 @@ main {
 }
 
 footer .cursive-main {
-    font-size: 45px;
+    /*font-size: 45px;*/
+    font-size: 2.8vw;
     color: rgb(90, 68, 68);
     width: 55%;
-    padding-top: 150px;
-    padding-bottom: 130px;
+    /*padding-top: 150px;*/
+    /*padding-bottom: 130px;*/
+    padding-top: 8vw;
+    padding-bottom: 7vw;
     margin: 0 auto;
 }
 
@@ -338,5 +353,33 @@ footer .cursive-main {
 
 .cursive-main:nth-child(3) {
     animation-delay: 2s; /* Третя строка починає анімацію через 2 секунди */
+}
+
+
+
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+        padding: 10vw 5vw;
+    }
+
+    .about-us-text, .about-us-img {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .about-us-img {
+        width: 50%;
+        margin-top: 5vw;
+    }
+
+    .what-we-offer-text {
+        width: 80%;
+    }
+
+
 }
 
