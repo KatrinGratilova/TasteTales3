@@ -31,9 +31,14 @@ main {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    height: 3.4vw;
 }
 .login-section {
     margin-left: auto;
+}
+
+.login-icon{
+    width: 2.7vw;
 }
 .login-btn {
     text-decoration: none;
