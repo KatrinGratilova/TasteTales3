@@ -80,7 +80,7 @@ nav {
     margin-top: 10px;
     color: #B6801B;
     font-family: Playfair Display, serif;
-    font-size: 19px;
+    font-size: 1.3vw;
     font-weight: 600;
     overflow-wrap: break-word; /* переносит длинные слова */
     word-wrap: break-word; /* для старых браузеров */
@@ -100,9 +100,9 @@ nav {
     margin-top: 1px;
     color: #B6801B;
     font-family: Playfair Display;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 600;
-    line-height: 33px;
+    line-height: 1.2vw;
 }
 .like-icon {
     width: 27px;

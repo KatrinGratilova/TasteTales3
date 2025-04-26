@@ -155,7 +155,7 @@ main {
     display: flex; /* делаем карточку флекс-контейнером */
     flex-direction: column; /* размещаем элементы вертикально */
     justify-content: start; /* чтобы всё шло сверху */
-    min-height: 250px;
+    min-height: 21vw;
 }
 .like-icon{
     width: 2.2vw;
