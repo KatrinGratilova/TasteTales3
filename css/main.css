@@ -16,7 +16,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding: 20px 110px;
+    padding: 2vw 11vw;
 }
 .header {
     display: flex;
@@ -25,7 +25,7 @@ main {
 .logo-with-login {
     display: flex;
     align-items: center;
-    padding: 19px 110px;
+    padding: 1.2vw 7.2vw;
 }
 .logo {
     position: absolute;
@@ -72,9 +72,9 @@ nav {
 .regular-text {
     color: rgb(90, 68, 68);
     font-family: Playfair Display, serif;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 1.7vw;
 }
 .recipe-title {
     margin-top: 10px;
