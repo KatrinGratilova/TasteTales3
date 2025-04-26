@@ -58,7 +58,7 @@ nav {
 .nav-element {
     padding: 0.8vw 0;
     flex: 1;
-    max-width: 200px;
+    max-width: 13vw;
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: Playfair Display, serif;
