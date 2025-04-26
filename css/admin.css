@@ -1,0 +1,107 @@
+main {
+    gap: 30px;
+}
+
+button {
+    margin-left: 5px;
+    padding: 4px 12px;
+    border: none;
+    background-color: #c6a497;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 70px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #988882;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+td a {
+    color: #9c6b60;
+    text-decoration: underline;
+}
+
+td button {
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: #fdf9f7;
+}
+
+tr:hover {
+    background-color: #f3eae6;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.recipes-management {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-self: center;
+    align-items: center;
+}
+
+.table-scroll {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+.admin-title {
+    display: flex;
+    justify-content: center;
+}
+
+.regular-text {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.section-title {
+    color: rgb(90, 68, 68);
+    font-family: Kaliningrad Historical G, serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    color: #CFA557;
+    font-family: Kaliningrad Historical G, serif;
+    font-weight: 400;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.line {
+    margin: 0;
+    padding: 0;
+}

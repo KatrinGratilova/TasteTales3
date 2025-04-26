@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Опис рецепту</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Сторінка для опису конкретного рецепту">
+    <meta name="author" content="Kateryna Hratilova">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/recipe_details.css">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <link href="https://fonts-online.ru/fonts/magnolia-script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo-with-login">
+        <img class="logo" src="/svg/logo-icon.svg" alt="">
+        <div class="login-section">
+            <img src="/svg/login-icon.svg" alt="">
+            <a class="login-btn" href="login.html">УВІЙТИ</a>
+        </div>
+    </div>
+    <nav>
+        <a class="nav-element" href="index.html">ПРО САЙТ</a>
+        <a class="nav-element" href="catalog.html">КАТАЛОГ РЕЦЕПТІВ</a>
+        <a class="nav-element" href="favorites.html">ОБРАНІ РЕЦЕПТИ</a>
+        <a class="nav-element" href="adding_recipe.html">ДОДАТИ РЕЦЕПТ</a>
+    </nav>
+</header>
+<main>
+    <section class="recipe-head">
+        <p class="cursive fade-in-element">Рецепт</p>
+        <h2 class="recipe-name fade-in-element">ПОЛУНИЧНИЙ ТОРТ</h2>
+        <div class="recipe-elements fade-in-element">
+            <div class="likes-group">
+                <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                <div class="likes-numb">1900
+                </div>
+            </div>
+            <div class="time-group">
+                <img src="/svg/time-icon.svg" alt="">
+                <div class="time-numb">60 хвилин</div>
+            </div>
+            <div class="category-name">ДЕСЕРТИ</div>
+            <a class="save-btn2 save-delete-fav-btn" href="#">Зберегти</a>
+        </div>
+    </section>
+    <section class="details-and-comments-container">
+        <div class="details-container">
+            <p class="regular-text fade-in-element"><b>Автор: TasteTales</b></p>
+            <img class="recipe-img fade-in-element" src="/img/cake-recipe-img.png" alt="">
+            <p class="regular-text fade-in-element"><b><i>Свіжа полуниця, ванільний крем і легкі збиті вершки між шарами
+                повітряного
+                бісквіта - вам точно сподобається!</i></b></p>
+            <p class="cursive fade-in-element">Інгредієнти</p>
+            <div class="ingredients-container fade-in-element">
+                <div class="column">
+                    <p class="regular-text">Для бісквіта:</p>
+                    <ul class="regular-text">
+                        <li>15 г вершкового масла (1 ст. л.);</li>
+                        <li>30 г олії (2 ст. л. + 1 ч. л.);</li>
+                        <li>40 г молока (2 ст. л. + 2 ч. л.);</li>
+                        <li>30 г цукру (частина I) (2 ст. л. + 1 ч. л.);</li>
+                        <li>70 г борошна (½ склянки + 2 ст. л.);</li>
+                        <li>3 яйця;</li>
+                        <li>60 г цукру (частина II) (½ склянки + 1 ч.л.).</li>
+                    </ul>
+                    <p class="regular-text">Для ванільного крему:</p>
+                    <ul class="regular-text">
+                        <li>200 г молока (¾ склянки + 4 ст. л.);</li>
+                        <li>100 г цукру (½ склянки);</li>
+                        <li>16 г кукурудзяного крохмалю (2 ст. л.);</li>
+                        <li>1 яєчний жовток;</li>
+                        <li>½ ч. л. ванільної пасти*;</li>
+                        <li>20 г вершкового масла (1 ½ ст. ложки).</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <p class="regular-text">Для збитих вершків:</p>
+                    <ul class="regular-text">
+                        <li>450 г жирних вершків (36-40%);</li>
+                        <li>¼ ч. л. желатину;</li>
+                        <li>1 ст. л. холодної води;</li>
+                        <li>0 г цукру (¼ склянки).</li>
+                    </ul>
+                    <p class="regular-text">Для прикраси:</p>
+                    <ul class="regular-text">
+                        <li>500 г свіжої полуниці однакового розміру.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="cursive fade-in-element">Інструкція приготування</p>
+            <p class="regular-text fade-in-element" style="text-align: justify;">
+                Розігрійте духовку до 160°C. Збийте яєчні жовтки. Нагрійте молоко, масло, вершкове масло і цукор на
+                повільному вогні, помішуючи, поки цукор не розтане. Продовжуючи помішувати, влийте молочну суміш у
+                яєчні жовтки і перемішайте до однорідності. Просійте борошно в отриману суміш і знову перемішайте до
+                однорідності.
+                <br><br>
+                Збийте яєчні білки з цукром за допомогою міксера до стійких піків. У три прийоми і дуже акуратно
+                додайте отриману меренгу в жовткову суміш, намагаючись не здути бульбашки.
+                <br><br>
+                Обгорніть дно та стінки роз'ємної форми складеною вдвоє фольгою - це вбереже форму від підтікання.
+                Якщо форма нероз'ємна, то пропустіть цей крок. Зсередини форму вистеліть пергаментом. Перекладіть
+                тісто у форму для торта і помістіть її в духовку на водяну баню - поставте на деко з гарячою водою.
+                Випікайте 60 хвилин, потім вимкніть і залиште бісквіт у духовці ще на 15 хвилин.
+                <br><br>
+                Нагрійте молоко на повільному вогні до появи пари. З'єднайте яєчний жовток, цукор, кукурудзяний
+                крохмаль і ваніль та збийте. Додайте до яєчної суміші підігріте молоко та знову збийте. Перелийте в
+                сотейник та нагрівайте на повільному вогні, постійно помішуючи, - до загустіння. Зніміть з вогню і
+                додайте вершкове масло, перемішайте. Перекладіть крем у миску і накрийте плівкою в контакт -
+                притискаючи плівку до поверхні крему. Охолодіть крем, а потім збийте його та перекладіть у
+                кондитерський мішок.
+                <br><br>
+                З'єднайте желатин і воду та залиште набухати 5 хвилин. Змішайте вершки та цукор і збийте їх за
+                допомогою міксера до м'яких піків. Желатинову суміш розтопіть у мікрохвильовці протягом 20 секунд,
+                додайте до них ложку вершків і перемішайте до однорідності. Продовжуючи збивати вершки, додайте
+                желатин і збийте до середньо-стійких піків. Перекладіть вершки в кондитерський мішок.
+                <br><br>
+                Зріжте акуратно тонкий верхній шар бісквіта, потім розріжте бісквіт на два тонких коржі. Кільце для
+                торта (можна використовувати роз'ємну форму) викладіть зсередини ацетатною плівкою або звичайним
+                пергаментним папером. Покладіть одну частину бісквітного коржа на дно форми. Викладіть з боків
+                розрізану навпіл полуницю - зрізаною стороною до стінок кільця. Заповніть проміжки між полуницею
+                збитими вершками.
+                <br><br>
+                Викладіть у центр крем, розкладіть цілі ягоди полуниці плоским боком донизу поверх крему, поки не
+                покриєте основу торта. Заповніть проміжки, що залишилися, збитими вершками (не забудьте залишити
+                трохи вершків для верху торта), потім покладіть шар торта, що залишився.
+                <br><br>
+                Викладіть зверху решту збитих вершків і розрівняйте їх лопаткою. Прикрасьте торт полуницею, що
+                залишилася, і поставте в холодильник для застигання на 3-4 години або на ніч.
+                <br><br>
+                Після застигання зніміть кільце з торта й акуратно видаліть ацетатну смужку (або пергаментний папір)
+                перед подачею.
+            </p>
+            <p class="cursive fade-in-element">Готово!</p>
+        </div>
+        <aside class="comments-container">
+            <p class="cursive fade-in-element">Коментарі</p>
+            <div class="comments fade-in-element" id="commentsList">
+                <p class="client-name"><b>Олена Горська:</b></p>
+                <p class="comment-text">Дуже смачно! Дякую за рецепт!</p>
+                <p class="client-name"><b>Іван Азарко:</b></p>
+                <p class="comment-text">Обов'язково спробую приготувати!</p>
+            </div>
+            <form id="commentForm" class="fade-in-element">
+                <label>
+                    <textarea id="comment" name="comment" placeholder="Введіть коментар..."></textarea>
+                </label>
+                <button class="send-btn main-btn" type="submit">Надіслати</button>
+            </form>
+            <div id="message" class="form-message regular-text"
+                 style="font-size: 14px; line-height: 15px; margin-top: 20px"></div>
+        </aside>
+    </section>
+</main>
+<footer>
+    <p class="regular-text">&copy; 2025 TasteTales. All rights reserved.</p>
+</footer>
+<script src="/js/effects.js"></script>
+<script src="/js/forms.js"></script>
+</body>
+<style>
+    a:hover {
+        color: rgb(90, 68, 68);
+    }
+</style>
+</html>

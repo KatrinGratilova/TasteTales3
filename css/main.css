@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Annabelle';
+    src: url('/fonts/Annabelle Cyr/Annabelle Cyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kaliningrad Historical G';
+    src: url('/fonts/Kaliningrad Historical G/Kaliningrad_Historical_G_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 110px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.logo-with-login {
+    display: flex;
+    align-items: center;
+    padding: 19px 110px;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.login-section {
+    margin-left: auto;
+}
+.login-btn {
+    text-decoration: none;
+    color: rgb(90, 68, 68);
+    font-family: Playfair Display;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(90deg, rgb(231, 178, 62), rgb(239, 202, 120) 34.1%, rgb(247, 223, 172) 61.6%, rgb(251, 234, 197) 99.99%);
+}
+.nav-element {
+    padding: 12px 0;
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Playfair Display, serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-element:hover {
+    color: rgb(90, 68, 68);
+}
+.curr-page {
+    height: 100%;
+    color: rgb(183, 133, 39);
+    background-color: #FFF5F3;
+}
+.regular-text {
+    color: rgb(90, 68, 68);
+    font-family: Playfair Display, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.recipe-title {
+    margin-top: 10px;
+    color: #B6801B;
+    font-family: Playfair Display, serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+.recipe-img {
+    width: 100%;
+    border-radius: 26px;
+}
+.likes-group {
+    display: flex;
+}
+.likes-numb {
+    margin-left: 8px;
+    margin-top: 1px;
+    color: #B6801B;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 33px;
+}
+.like-icon {
+    width: 27px;
+    height: 32px;
+    margin-top: 6px;
+}
+.save-btn {
+    background-color: #FFF4F3;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(176, 49, 64);
+    font-family: Playfair Display;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 27.5px;
+}
+input,
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(214, 114, 114);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+
+    color: rgb(90, 68, 68);
+    font-family: Playfair Display, serif;
+}
+input::placeholder,
+textarea::placeholder,
+select {
+    color: rgb(226, 183, 183);
+    font-family: Playfair Display, serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+input:focus,
+textarea:focus,
+select:focus,
+input[type="file"]:focus {
+    outline: none;
+}
+label {
+    color: rgb(100, 83, 83);
+    font-family: Playfair Display, serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.main-btn:hover {
+    border-radius: 100px;
+    color: rgb(152, 110, 19);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgb(226, 183, 183);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.save-delete-fav-btn:hover{
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(226, 194, 124, 0.73);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+/* Анімація для плавної появи елементів */
+.fade-in-element {
+    opacity: 0;   /* Початкова прозорість */
+    transform: translateY(20px); /* Початкова позиція елемента */
+    transition: opacity 1s, transform 1s; /* Тривалість анімації */
+}
+
+/* Коли елемент з'являється на екрані */
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0); /* Елемент плавно переміщається в початкову позицію */
+}
+
+/* Стиль для повідомлення форми */
+.form-message {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-weight: 600;
+}
+
+/* Коли повідомлення з'являється */
+.form-message.visible {
+    opacity: 1;
+}
+
+/* Стиль для модального вікна */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(172, 171, 171, 0.4);
+}
+
+/* Стиль для тексту в модальному вікні */
+.modalText {
+    background-color: #FFF5F3;
+    border-radius: 30px;
+    margin: 15% auto;
+    padding: 40px 20px;
+    border: 2px solid #ffffff;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стиль для модального вікна при наведенні */
+.modalText:hover{
+    box-shadow: 0 0 10px rgba(226, 194, 124, 0.73);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}

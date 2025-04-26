@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Адміністративна панель</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Сторінка для модерації контенту сайта адміністратором">
+    <meta name="author" content="Kateryna Hratilova">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin.css">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="TasteTales"/>
+    <link rel="manifest" href="/site.webmanifest"/>
+    <link href="https://fonts-online.ru/fonts/magnolia-script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <div class="logo-with-login">
+        <img class="logo" src="/svg/logo-icon.svg" alt="">
+        <div class="login-section">
+            <img src="/svg/login-icon.svg" alt="">
+            <a class="login-btn" href="login.html">Олексій</a>
+        </div>
+    </div>
+    <nav>
+        <a class="nav-element" href="index.html">ПРО САЙТ</a>
+        <a class="nav-element" href="catalog.html">КАТАЛОГ РЕЦЕПТІВ</a>
+        <a class="nav-element" href="favorites.html">ОБРАНІ РЕЦЕПТИ</a>
+        <a class="nav-element" href="adding_recipe.html">ДОДАТИ РЕЦЕПТ</a>
+    </nav>
+</header>
+<main>
+    <section class="admin-title fade-in-element">
+        <h1 class="page-title">Адміністрування</h1>
+    </section>
+    <section class="recipes-management fade-in-element">
+        <h2 class="section-title">Опубліковані рецепти</h2>
+        <label class="filters" for="category">Фільтр
+            <select id="category">
+                <option value="all">Усі рецепти</option>
+                <option value="soups">Супи</option>
+                <option value="salads">Салати</option>
+                <option value="desserts">Десерти</option>
+                <option value="mains">Основні страви</option>
+            </select>
+        </label>
+        <div class="table-scroll">
+            <table class="regular-text">
+                <tr>
+                    <th>Назва страви</th>
+                    <th>Подробиці</th>
+                    <th>Категорія</th>
+                    <th>Дії</th>
+                </tr>
+                <tr data-category="desserts">
+                    <td>Млинці на молоці</td>
+                    <td><a href="#">Детальніше</a></td>
+                    <td>Десерти</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr data-category="desserts">
+                    <td>Полуничний торт</td>
+                    <td><a href="recipe_details.html">Детальніше</a></td>
+                    <td>Десерти</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr data-category="desserts">
+                    <td>Пухкі японські панкейки</td>
+                    <td><a href="recipe_details.html">Детальніше</a></td>
+                    <td>Десерти</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr data-category="desserts">
+                    <td>Млинці на молоці</td>
+                    <td><a href="recipe_details.html">Детальніше</a></td>
+                    <td>Десерти</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr data-category="soups">
+                    <td>Борщ український</td>
+                    <td><a href="recipe_details.html">Детальніше</a></td>
+                    <td>Основні страви</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr data-category="mains">
+                    <td>Стейк Рібай</td>
+                    <td><a href="recipe_details.html">Детальніше</a></td>
+                    <td>Основні страви</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr data-category="salads">
+                    <td>Салат Цезар традиційний</td>
+                    <td><a href="recipe_details.html">Детальніше</a></td>
+                    <td>Салати</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr data-category="mains">
+                    <td>Запечена скумбрія</td>
+                    <td><a href="recipe_details.html">Детальніше</a></td>
+                    <td>Основні страви</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <hr>
+    <section class="fade-in-element">
+        <h2 class="section-title">Користувачі</h2>
+        <div class="table-scroll">
+            <table id="users-table" class="regular-text">
+                <tr>
+                    <th>Ім'я користувача</th>
+                    <th>Email</th>
+                    <th>Статус</th>
+                    <th>Дії</th>
+                </tr>
+                <tr>
+                    <td>Олена Горська</td>
+                    <td>olena@gmail.com</td>
+                    <td>Active</td>
+                    <td>
+                        <button>Block</button>
+                        <button>Unblock</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Іван Азарко</td>
+                    <td>ivan@gmail.com</td>
+                    <td>Active</td>
+                    <td>
+                        <button>Block</button>
+                        <button>Unblock</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Катерина Гратілова</td>
+                    <td>katrin@gmail.com</td>
+                    <td>Active</td>
+                    <td>
+                        <button>Block</button>
+                        <button>Unblock</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <hr>
+    <section class="fade-in-element">
+        <h2 class="section-title">Запропоновані рецепти</h2>
+        <div class="table-scroll">
+            <table id="suggested-table" class="regular-text">
+                <tr>
+                    <th>Назва</th>
+                    <th>Детальніше</th>
+                    <th>Дії</th>
+                </tr>
+                <tr>
+                    <td>Медовик</td>
+                    <td><a href="#">Детальніше</a></td>
+                    <td>
+                        <button>Approve</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Крем-суп</td>
+                    <td><a href="#">Детальніше</a></td>
+                    <td>
+                        <button>Approve</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <hr class="line">
+    <section class="fade-in-element">
+        <h2 class="section-title">Коментарі</h2>
+
+        <div class="table-scroll">
+            <table id="comments-table" class="regular-text">
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Коментар</th>
+                    <th>Дія</th>
+                </tr>
+                <tr>
+                    <td>Олена Горська</td>
+                    <td>Дуже смачно! Дякую за рецепт!</td>
+                    <td>
+                        <button>Approve</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Іван Азарко</td>
+                    <td>Обов'язково спробую приготувати!</td>
+                    <td>
+                        <button>Approve</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+<footer class="regular-text">
+    <p>&copy; 2025 TasteTales. All rights reserved.</p>
+</footer>
+<script src="/js/effects.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+<style>
+    th,
+    td {
+        padding: 5px 20px;
+        border: 1px solid #ddd;
+        text-align: center;
+        vertical-align: middle;
+    }
+    th {
+        padding: 20px 20px;
+        background-color: #eae6e2;
+        color: #5A4444;
+        font-weight: 600;
+        font-size: 23px;
+    }
+    button {
+        margin-left: 5px;
+        padding: 4px 12px;
+        border: none;
+        background-color: #c6a497;
+        color: white;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 100px;
+    }
+</style>
+</html>

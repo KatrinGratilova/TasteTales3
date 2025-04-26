@@ -1,0 +1,328 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+}
+
+.start-page {
+    background-color: #FFF5F3;
+    padding: 30px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: linear-gradient(0.00deg, rgb(255, 255, 255), rgba(255, 252, 252, 0.88) 62.1%, rgba(255, 244, 243, 0.52) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: bottom;
+}
+
+.start-page-row1 {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.start-page-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-page-title {
+    color: rgb(207, 165, 87);
+    font-family: Kaliningrad Historical G, serif;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 95px;
+}
+
+.cursive-main {
+    color: rgb(207, 165, 87);
+    font-family: Annabelle, serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.start-page .cursive-main {
+    opacity: 0;
+    width: 0; /* скрываем ширину */
+    overflow: hidden; /* скрываем переполнение */
+    white-space: nowrap; /* запрещаем перенос строк */
+    animation: typing 3s forwards ease-in-out; /* анимация появления */
+}
+
+.catalog-btn {
+    text-decoration: none;
+    padding: 16px 73px;
+    color: rgb(202, 145, 24);
+    font-family: Playfair Display, serif;
+    font-size: 25px;
+    font-weight: 500;
+    border: 3px solid rgb(231, 178, 62);
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 10px 40px 0 rgba(131, 129, 129, 0.25);
+}
+
+
+.catalog-btn:hover, .catalog-btn2:hover {
+    border-radius: 100px;
+    color: rgb(152, 110, 19);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgb(226, 183, 183);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.catalog-btn-wrapper {
+    margin-top: 27px;
+}
+
+.start-page-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cakes {
+    width: 100%;
+}
+
+.start-page-row2 {
+    margin-top: 50px;
+    width: 100%;
+    padding: 35px 0;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    background: rgb(249, 236, 192);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row2-text {
+    color: rgb(182, 128, 27);
+    font-family: Playfair Display, serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.recipes-card-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: space-between;
+    text-align: left;
+    width: 78%;
+}
+
+.recipe-card {
+    width: calc(22% - 13px);
+    height: 100%;
+}
+
+.recipe-img {
+    width: 100%;
+    border-radius: 0;
+    aspect-ratio: 4/4;
+}
+
+.about-us {
+    background-color: #ffffff;
+    padding: 70px 210px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-text {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 50%;
+    padding-right: 30px;
+    gap: 20px;
+}
+
+.section-title {
+    color: #CFA557;
+    font-family: Kaliningrad Historical G, serif;
+    font-weight: 400;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.about-us-text .cursive-main {
+    color: #B6801B;
+}
+
+.about-us-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+    height: 100%;
+}
+
+.food-img {
+    width: 100%;
+}
+
+.text-highlight {
+    font-style: italic;
+    font-weight: 800;
+}
+
+.what-we-offer-text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.features {
+    width: 60%;
+}
+
+.what-we-offer .cursive-main {
+    width: 90%;
+    color: #B6801B;
+}
+
+.catalog-btn2 {
+    text-decoration: none;
+    padding: 13px 63px;
+    color: rgb(202, 145, 24);
+    font-family: Playfair Display, serif;
+    font-size: 25px;
+    font-weight: 500;
+    border: 3px solid rgb(231, 178, 62);
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 10px 40px 0 rgba(131, 129, 129, 0.25);
+}
+
+.catalog-btn-wrapper2 {
+    margin-top: 50px;
+}
+
+.text-highlight2 {
+    font-style: italic;
+    font-weight: 800;
+    color: #B6801B;
+}
+
+footer .cursive-main {
+    font-size: 45px;
+    color: rgb(90, 68, 68);
+    width: 55%;
+    padding-top: 150px;
+    padding-bottom: 130px;
+    margin: 0 auto;
+}
+
+.arrow {
+    margin-top: 7%;
+    width: 30px;
+    height: 70px;
+}
+
+.arrow-reverse {
+    margin-top: 7%;
+    width: 30px;
+    height: 70px;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+/* Стиль для зображення */
+.start-page-img {
+    position: relative;
+}
+
+.cakes {
+    animation: moveUpDown 3s ease-in-out infinite;
+    /*filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)); !* початково без тіні *!*/
+}
+
+/* Анімація */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0) ;
+        /*filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)); !* без тіні *!*/
+    }
+    50% {
+        transform: translateY(-10px);
+        /*filter: drop-shadow(0 20px 30px rgba(255, 105, 180, 0.5)); !* велика рожева тінь *!*/
+    }
+    100% {
+        transform: translateY(0) ;
+        /*filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)); !* без тіні *!*/
+    }
+}
+
+
+/*.home-page-title {*/
+/*    animation: colorCycle 6s infinite alternate;*/
+/*}*/
+
+/* Анімація зміни кольору тексту */
+/*@keyframes colorCycle {*/
+/*    0% {*/
+/*        color: #9f6e15;*/
+/*    }*/
+/*    25% {*/
+/*        color: #eface7;*/
+/*    }*/
+/*    50% {*/
+/*        color: #8fc38f;*/
+/*    }*/
+/*    75% {*/
+/*        color: #ea6e9c;*/
+/*    }*/
+/*    100% {*/
+/*        color: #6783c6;*/
+/*    }*/
+/*}*/
+
+/* Опис анімації для появи тексту (ефект друкування) */
+@keyframes typing {
+    0% {
+        width: 0;  /* Початковий розмір ширини елемента */
+        opacity: 0; /* Початкова непрозорість (не видно) */
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* Для кожної строки з затримкою */
+.cursive-main:nth-child(1) {
+    animation-delay: 0s; /* Перша строка починає анімацію відразу */
+}
+
+.cursive-main:nth-child(2) {
+    animation-delay: 1s; /* Друга строка починає анімацію через 1 секунду */
+}
+
+.cursive-main:nth-child(3) {
+    animation-delay: 2s;  /* Третя строка починає анімацію через 2 секунди */
+}

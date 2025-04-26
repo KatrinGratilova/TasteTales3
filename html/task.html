@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динамічне налаштування блоку</title>
+    <style>
+        /* Стилі для сторінки */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e6ec;
+            display: flex; /* Використовуємо флекс-контейнер для вирівнювання елементів */
+            flex-direction: column; /* Встановлюємо вертикальне розташування елементів */
+            align-items: center; /* Центруємо елементи по горизонталі */
+            justify-content: flex-start; /* Вирівнюємо елементи по верху сторінки */
+            padding-top: 50px;
+        }
+
+        /* Стилі для кнопки */
+        button {
+            padding: 10px 30px;
+            cursor: pointer;
+            color: rgb(202, 145, 24);
+            font-family: Playfair Display, serif;
+            font-size: 25px;
+            font-weight: 500;
+            border: 3px solid rgb(231, 178, 62);
+            border-radius: 100px;
+            background: rgb(255, 255, 255);
+            box-shadow: 5px 10px 40px 0 rgba(131, 129, 129, 0.25);
+        }
+
+        /* Стилі для кнопки при наведенні */
+        button:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgb(226, 183, 183);
+            transform: scale(1.05); /* Трохи збільшуємо розмір кнопки */
+            transition: all 0.3s ease; /* Плавний перехід всіх змін */
+        }
+
+        /* Стилі для контейнера, куди додається блок */
+        #container {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column; /* Встановлюємо вертикальне розташування елементів */
+            align-items: center; /* Центруємо елементи по горизонталі */
+        }
+    </style>
+</head>
+<body>
+<!-- Кнопка, яка викликає створення нового блоку -->
+<button onclick="createDynamicDiv()">Створити блок</button>
+
+<!-- Контейнер, куди додається динамічний блок -->
+<section id="container"></section>
+
+<script>
+    // Глобальні змінні для налаштування блоку
+    const blockColor = 'lightblue';      // Колір блоку
+    const blockWidth = '300px';          // Ширина блоку
+    const blockHeight = '200px';         // Висота блоку
+    const blockFontSize = '20px';        // Розмір шрифту блоку
+    const blockDisplay = 'flex';         // Тип відображення блоку (flex)
+    const blockTextAlign = 'center';     // Вирівнювання тексту
+    const blockVerticalAlign = 'center'; // Вирівнювання тексту по вертикалі
+
+    //Функція для створення та динамічного відображення блоку
+    function createDynamicDiv() {
+        // Перевірка на існування блоку з id 'dynamicDiv'. Якщо такий є, не створюємо новий.
+        if (document.getElementById('dynamicDiv')) {
+            return; // Блок вже існує — нічого не робимо
+        }
+        // Створюємо новий блок <div>
+        let newDiv = document.createElement('div');
+        newDiv.id = 'dynamicDiv';   // Присвоюємо блоку унікальний id
+
+        // Застосовуємо стилі до блоку з використанням глобальних змінних
+        applyBlockStyles(newDiv);
+
+        // Текст для нового блоку
+        newDiv.innerText = "З використанням глобальних змінних було виконано динамічне налаштування відображення даного нового блоку div";
+
+        // Додаємо новий блок до контейнера на сторінці
+        document.getElementById("container").appendChild(newDiv);
+    }
+
+    // Функція для застосування стилів до блоку
+    function applyBlockStyles(element) {
+        // Встановлюємо всі стилі блоку за допомогою глобальних змінних
+        element.style.backgroundColor = blockColor;
+        element.style.width = blockWidth;
+        element.style.height = blockHeight;
+        element.style.fontSize = blockFontSize;
+        element.style.display = blockDisplay;
+        element.style.alignItems = blockVerticalAlign;
+        element.style.textAlign = blockTextAlign;
+    }
+</script>
+</body>
+</html>

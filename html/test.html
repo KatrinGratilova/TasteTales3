@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<table>
+    <caption>Топ 3 фільми, які має подивитися кожен</caption>
+    <colgroup>
+        <col style="background-color: #d8eafa; width: 20%;">
+        <col style="background-color: #f3c8c8; width: 20%;">
+        <col style="background-color: #fbe9ae;width: 10%;">
+        <col style="background-color: #d4f8d4; width: 25%;">
+        <col style="background-color: #c8daf4; width: 25%;">
+    </colgroup>
+    <thead>
+    <tr>
+        <th>Назва</th>
+        <th>Оригінальна назва</th>
+        <th>Рік</th>
+        <th>Жанр</th>
+        <th>Країна</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Початок</td>
+        <td>Inception</td>
+        <td>2010</td>
+        <td rowspan="3">Наукова фантастика</td>
+        <td rowspan="3">США</td>
+    </tr>
+    <tr>
+        <td>Інтерстеллар</td>
+        <td>Interstellar</td>
+        <td>2014</td>
+    </tr>
+    <tr>
+        <td>Матриця</td>
+        <td>The Matrix</td>
+        <td>1999</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <th colspan="5">Інформація станом на 17 березня 2025</th>
+    </tr>
+    </tfoot>
+</table>
+</body>
+<style>
+    table {
+        border-collapse: collapse;
+        /*border-spacing: 10px; !* Відстань між комірками *!*/
+        margin: 0 auto; /* Вирівнювання таблиці по центру */
+    }
+
+    tr {
+        border: 1px solid; /* границя між рядками */
+    }
+
+    td, th {
+        border: 1px solid; /* границя між стоапцями */
+    }
+    /*caption{*/
+    /*    caption-side: bottom;*/
+    /*}*/
+    td {
+        padding: 10px; /* Відступи всередині комірок */
+        text-align: center; /* Вирівнювання тексту по центру */
+    }
+
+</style>
+</html>

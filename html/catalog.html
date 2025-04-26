@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Каталог рецептів</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Сторінка для каталогу рецептів з можливістю фільтрації">
+    <meta name="author" content="Kateryna Hratilova">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/catalog.css">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <link href="https://fonts-online.ru/fonts/magnolia-script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo-with-login">
+        <img class="logo" src="/svg/logo-icon.svg" alt="">
+        <div class="login-section">
+            <img src="/svg/login-icon.svg" alt="">
+            <a class="login-btn" href="login.html">УВІЙТИ</a>
+        </div>
+    </div>
+    <nav>
+        <a class="nav-element" href="index.html">ПРО САЙТ</a>
+        <a class="nav-element curr-page" href="catalog.html">КАТАЛОГ РЕЦЕПТІВ</a>
+        <a class="nav-element" href="favorites.html">ОБРАНІ РЕЦЕПТИ</a>
+        <a class="nav-element" href="adding_recipe.html">ДОДАТИ РЕЦЕПТ</a>
+    </nav>
+</header>
+<main>
+    <section class="info-and-filters">
+        <div class="catalog-info-wrapper">
+            <div>
+                <h2 class="title-catalog fade-in-element">КАТАЛОГ РЕЦЕПТІВ</h2>
+                <p class="regular-text fade-in-element">Обирайте страви до смаку — від традиційних сімейних рецептів до
+                    сучасних
+                    кулінарних ідей. <br><br>
+                    Наш каталог містить велику кількість рецептів, і щоб вам було легше знайти потрібну страву,
+                    ми
+                    передбачили зручну систему фільтрів.</p>
+            </div>
+            <div class="filter-btn-wrapper fade-in-element">
+                <button class="filter-btn main-btn" id="apply-filters">ФІЛЬТР</button>
+            </div>
+        </div>
+        <div class="filters fade-in-element">
+            <span class="option all-recipes-option">ПОКАЗАТИ ВСІ РЕЦЕПТИ</span>
+            <div class="option" data-category="desserts">
+
+                <svg class="filter-option-icon" width="20" height="20" viewBox="0 0 25 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M2 0.5H23C23.8284 0.5 24.5 1.17157 24.5 2V23C24.5 23.8284 23.8284 24.5 23 24.5H2C1.17157 24.5 0.5 23.8284 0.5 23V2C0.5 1.17157 1.17157 0.5 2 0.5Z"
+                            stroke="#B6801B"/>
+                </svg>
+                <p>Десерти</p>
+            </div>
+
+            <div class="option" data-category="salads">
+                <svg class="filter-option-icon" width="20" height="20" viewBox="0 0 25 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M2 0.5H23C23.8284 0.5 24.5 1.17157 24.5 2V23C24.5 23.8284 23.8284 24.5 23 24.5H2C1.17157 24.5 0.5 23.8284 0.5 23V2C0.5 1.17157 1.17157 0.5 2 0.5Z"
+                            stroke="#B6801B"/>
+                </svg>
+                <p>Салати</p>
+            </div>
+            <div class="option" data-category="soups">
+                <svg class="filter-option-icon" width="20" height="20" viewBox="0 0 25 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M2 0.5H23C23.8284 0.5 24.5 1.17157 24.5 2V23C24.5 23.8284 23.8284 24.5 23 24.5H2C1.17157 24.5 0.5 23.8284 0.5 23V2C0.5 1.17157 1.17157 0.5 2 0.5Z"
+                            stroke="#B6801B"/>
+                </svg>
+                <p>Супи</p>
+            </div>
+            <div class="option" data-category="drinks">
+                <svg class="filter-option-icon" width="20" height="20" viewBox="0 0 25 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M2 0.5H23C23.8284 0.5 24.5 1.17157 24.5 2V23C24.5 23.8284 23.8284 24.5 23 24.5H2C1.17157 24.5 0.5 23.8284 0.5 23V2C0.5 1.17157 1.17157 0.5 2 0.5Z"
+                            stroke="#B6801B"/>
+                </svg>
+                <p>Напої</p>
+            </div>
+            <div class="option" data-category="mains">
+                <svg class="filter-option-icon" width="20" height="20" viewBox="0 0 25 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M2 0.5H23C23.8284 0.5 24.5 1.17157 24.5 2V23C24.5 23.8284 23.8284 24.5 23 24.5H2C1.17157 24.5 0.5 23.8284 0.5 23V2C0.5 1.17157 1.17157 0.5 2 0.5Z"
+                            stroke="#B6801B"/>
+                </svg>
+                <p>Основні страви</p>
+            </div>
+        </div>
+    </section>
+    <section class="container_recipes">
+        <div class="recipie-element fade-in-element" data-category="desserts">
+            <img class="recipe-img" src="/img/strawberry_cake.png" alt="">
+            <div class="recipe-title">Полуничний торт</div>
+            <div class="recipe-desc">Свіжа полуниця, ванільний крем і легкі збиті вершки між шарами повітряного
+                бісквіта - вам точно сподобається!
+            </div>
+            <div class="recipe-elements">
+                <div class="likes-group">
+                    <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                    <div class="likes-numb">1900
+                    </div>
+                </div>
+                <a class="save-btn save-delete-fav-btn" href="#">Зберегти</a>
+                <a class="recipe-det-btn" href="recipe_details.html">
+                    <img src="/svg/recipe-details-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="recipie-element fade-in-element" data-category="desserts">
+            <img class="recipe-img" src="/img/pancakes.png" alt="">
+            <div class="recipe-title">Пухкі японські панкейки</div>
+            <div class="recipe-desc">Ці надзвичайно ніжні млинці завоювали любов у всьому світі завдяки своєму
+                неймовірному смаку та пишності.
+            </div>
+            <div class="recipe-elements">
+                <div class="likes-group">
+                    <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                    <div class="likes-numb">988
+                    </div>
+                </div>
+                <a class="save-btn save-delete-fav-btn" href="#">Зберегти</a>
+                <a class="recipe-det-btn" href="recipe_details.html">
+                    <img src="/svg/recipe-details-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="recipie-element fade-in-element" data-category="desserts">
+            <img class="recipe-img" src="/img/milk-pancakes.png" alt="">
+            <div class="recipe-title">Млинці на молоці</div>
+            <div class="recipe-desc">Домашні млинці на молоці – це дуже смачно. Вони виходять тонкими та ніжними. А
+                начинку можна взяти будь-яку!
+            </div>
+            <div class="recipe-elements">
+                <div class="likes-group">
+                    <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                    <div class="likes-numb">1239
+                    </div>
+                </div>
+                <a class="save-btn save-delete-fav-btn" href="#">Зберегти</a>
+                <a class="recipe-det-btn" href="recipe_details.html">
+                    <img src="/svg/recipe-details-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="recipie-element fade-in-element" data-category="desserts">
+            <img class="recipe-img" src="/img/tart.png" alt="">
+            <div class="recipe-title">Лимонний тарт</div>
+            <div class="recipe-desc">Лимонний тарт – один з найпоширеніших та найсмачніших десертів. А на вигляд цей
+                десерт – сама досконалість!
+            </div>
+            <div class="recipe-elements">
+                <div class="likes-group">
+                    <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                    <div class="likes-numb">2320
+                    </div>
+                </div>
+                <a class="save-btn save-delete-fav-btn" href="#">Зберегти</a>
+                <a class="recipe-det-btn" href="recipe_details.html">
+                    <img src="/svg/recipe-details-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="recipie-element fade-in-element" data-category="salads">
+            <img class="recipe-img" src="/img/salad.png" alt="">
+            <div class="recipe-title">Салат Цезар традиційний</div>
+            <div class="recipe-desc">Це не просто страва, а справжня легенда кулінарного світу. Його простий, але
+                вишуканий смак зробив його справжнім хітом.
+            </div>
+            <div class="recipe-elements">
+                <div class="likes-group">
+                    <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                    <div class="likes-numb">548
+                    </div>
+                </div>
+                <a class="save-btn save-delete-fav-btn" href="#">Зберегти</a>
+                <a class="recipe-det-btn" href="recipe_details.html">
+                    <img src="/svg/recipe-details-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="recipie-element fade-in-element" data-category="soups">
+            <img class="recipe-img" src="/img/borsh.png" alt="">
+            <div class="recipe-title">Український борщ</div>
+            <div class="recipe-desc">Густий наваристий борщ сподобається всім. Бути байдужим до цього густого
+                наваристого супу просто неможливо.
+            </div>
+            <div class="recipe-elements">
+                <div class="likes-group">
+                    <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                    <div class="likes-numb">1008
+                    </div>
+                </div>
+                <a class="save-btn save-delete-fav-btn" href="#">Зберегти</a>
+                <a class="recipe-det-btn" href="recipe_details.html">
+                    <img src="/svg/recipe-details-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="recipie-element fade-in-element" data-category="mains">
+            <img class="recipe-img" src="/img/fish.png" alt="">
+            <div class="recipe-title">Запечена скумбрія</div>
+            <div class="recipe-desc">Дієтологи кажуть, що скумбрія - одна з найкорисніших риб. У ній міститься
+                багато вітаміну Омега3, який покращує обмін речовин.
+            </div>
+            <div class="recipe-elements">
+                <div class="likes-group">
+                    <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                    <div class="likes-numb">879
+                    </div>
+                </div>
+                <a class="save-btn save-delete-fav-btn" href="#">Зберегти</a>
+                <a class="recipe-det-btn" href="recipe_details.html">
+                    <img src="/svg/recipe-details-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="recipie-element fade-in-element" data-category="mains">
+            <img class="recipe-img" src="/img/stake.png" alt="">
+            <div class="recipe-title">Стейк Рібай</div>
+            <div class="recipe-desc">Це найніжніше м’ясо, соковите, з жировими прошарками. Один раз спробувавши
+                його, складно забути і не захотіти ще.
+            </div>
+            <div class="recipe-elements">
+                <div class="likes-group">
+                    <img class="like-icon" src="/svg/like-icon.svg" alt="">
+                    <div class="likes-numb">340
+                    </div>
+                </div>
+                <a class="save-btn save-delete-fav-btn" href="#">Зберегти</a>
+                <a class="recipe-det-btn" href="recipe_details.html">
+                    <img src="/svg/recipe-details-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="show-more">
+        <div class="show-more-btn-wrapper fade-in-element">
+            <a class="show-more-btn main-btn">ПОКАЗАТИ ЩЕ</a>
+        </div>
+        <div class="page-numbers-wrapper fade-in-element">
+            <img class="page-arrow" src="/svg/page-arrow-icon.svg" alt="">
+            <div class="page-numbers">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <img class="page-arrow-reverse" src="/svg/page-arrow-icon.svg" alt="">
+        </div>
+    </section>
+    <p class="fade-in-element" id="no-recipes-message"
+       style="display: none; text-align: center; font-size: 20px; margin: 30px 0; color: rgb(176, 49, 64);">
+        Нічого не знайдено!
+    </p>
+</main>
+<footer>
+    <p class="regular-text">&copy; 2025 TasteTales. All rights reserved.</p>
+</footer>
+<script src="/js/effects.js"></script>
+<script src="/js/catalog.js"></script>
+</body>
+<style>
+    main,
+    .curr-page,
+    footer {
+        background-color: #FEF6E3;
+    }
+    .filters {
+        background: #FFF4F3;
+    }
+    a:hover {
+        color: rgb(90, 68, 68);
+    }
+</style>
+</html>
