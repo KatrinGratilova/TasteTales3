@@ -74,7 +74,8 @@ main {
     /*font-size: 25px;*/
     font-size: 1.7vw;
     font-weight: 500;
-    border: 3px solid rgb(231, 178, 62);
+    border: 0.2vw solid rgb(231, 178, 62);
+    /*border: 3px solid rgb(231, 178, 62);*/
     /*border-radius: 100px;*/
     border-radius: 2.4vw;
     background: rgb(255, 255, 255);
