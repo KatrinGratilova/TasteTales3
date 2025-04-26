@@ -380,6 +380,18 @@ footer .cursive-main {
         width: 80%;
     }
 
+    .start-page-row1 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .start-page-text {
+        width: 90%;
+    }
+    .cakes {
+        margin-top: 5vw;
+    }
 
 }
 
