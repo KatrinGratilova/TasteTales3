@@ -181,11 +181,9 @@ footer {
 }
 
 
-
-
 /* Стиль для іконки фільтру при виборі */
 .option.selected .filter-option-icon path {
-    fill: rgba(182, 128, 27, 0.46);  /* Колір заливки іконки при активації */
+    fill: rgba(182, 128, 27, 0.46); /* Колір заливки іконки при активації */
 }
 
 /* Стиль для тексту вибраної опції */
@@ -212,11 +210,6 @@ footer {
 }
 
 
-
-
-
-
-
 @media (min-width: 992px) and (max-width: 1199px) {
     .container_recipes {
         display: grid;
@@ -240,7 +233,8 @@ footer {
     .recipie-element {
         width: 100%;
     }
-    .regular-text{
+
+    .regular-text {
         font-size: 25px;
     }
 
@@ -248,11 +242,11 @@ footer {
         font-size: 23px;
     }
 
-    .option{
+    .option {
         font-size: 25px;
     }
 
-    .recipe-desc, .save-btn, .likes-numb{
+    .recipe-desc, .save-btn, .likes-numb {
         font-size: 22px;
     }
 }
