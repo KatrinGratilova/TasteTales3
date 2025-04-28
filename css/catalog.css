@@ -1,3 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2vw 7vw;
+}
+
+
 .info-and-filters {
     display: flex;
     justify-content: space-between;
@@ -161,10 +168,10 @@
     transform: rotate(180.00deg);
 }
 
-.like-icon {
-    width: 27px;
-    height: 32px;
-}
+/*.like-icon {*/
+/*    width: 27px;*/
+/*    height: 32px;*/
+/*}*/
 
 footer {
     padding-top: 20px;
@@ -210,43 +217,132 @@ footer {
 }
 
 
-@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+
+
+
+
+/* Адаптація для планшетів і невеликих ноутбуків */
+@media (max-width: 1024px) {
     .container_recipes {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
-        gap: 22px;
+        justify-content: center;
     }
 
     .recipie-element {
-        width: 100%; /* Щоб елементи підлаштувались під грід */
+        width: calc(33.333% - 15px); /* 3 елементи в ряд */
     }
 
+    .title-catalog {
+        font-size: 52px;
+    }
+
+    .filter-btn {
+        padding: 12px 50px;
+        font-size: 18px;
+    }
+
+    .show-more-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
 }
 
-@media (min-width: 1930px) {
+/* Адаптація для планшетів (портретна орієнтація) */
+@media (max-width: 768px) {
+    .info-and-filters {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .filter-btn-wrapper {
+        margin-top: 15px;
+        align-self: center;
+    }
+
     .container_recipes {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr); /* 4 колонки */
-        gap: 22px;
+        gap: 20px;
     }
 
     .recipie-element {
+        width: calc(50% - 10px); /* 2 елементи в ряд */
+    }
+
+    .title-catalog {
+        font-size: 42px;
+    }
+
+    .filter-btn, .show-more-btn {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .page-numbers {
+        font-size: 20px;
+    }
+}
+
+/* Адаптація для мобільних телефонів */
+@media (max-width: 480px) {
+    .container_recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipie-element {
+        width: 100%; /* 1 елемент в ряд */
+    }
+
+    .title-catalog {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .filter-btn, .show-more-btn {
         width: 100%;
+        padding: 10px;
+        font-size: 16px;
     }
 
-    .regular-text {
-        font-size: 25px;
+    .info-and-filters {
+        align-items: center;
     }
 
-    .recipe-title {
-        font-size: 23px;
+    .filters {
+        width: 100%;
+        padding: 10px;
     }
 
-    .option {
-        font-size: 25px;
+    .page-numbers {
+        font-size: 18px;
+        gap: 10px;
     }
 
-    .recipe-desc, .save-btn, .likes-numb {
-        font-size: 22px;
+    .page-arrow, .page-arrow-reverse {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .recipe-elements {
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 }
+
+/* Дуже маленькі екрани */
+@media (max-width: 360px) {
+    .title-catalog {
+        font-size: 26px;
+    }
+
+    .filter-btn, .show-more-btn {
+        font-size: 14px;
+    }
+
+    .page-numbers {
+        font-size: 16px;
+    }
+}
+

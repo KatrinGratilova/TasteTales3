@@ -99,10 +99,11 @@ nav {
 }
 .likes-group {
     display: flex;
+    align-items: center;
 }
 .likes-numb {
     margin-left: 8px;
-    margin-top: 1px;
+
     color: #B6801B;
     font-family: Playfair Display;
     font-size: 1.3vw;
