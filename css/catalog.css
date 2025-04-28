@@ -180,6 +180,7 @@ footer {
     justify-content: center;
 }
 
+
 .recipe-det-btn:hover {
     border-radius: 100px;
     box-shadow: 0 0 10px rgba(226, 194, 124, 0.73);
@@ -247,6 +248,12 @@ footer {
         padding: 10px 20px;
         font-size: 18px;
     }
+
+    .recipe-det-btn {
+        width: 1vw;
+        height: 1vw;
+    }
+
 }
 
 /* Адаптація для планшетів (портретна орієнтація) */

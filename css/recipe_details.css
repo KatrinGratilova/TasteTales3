@@ -143,3 +143,87 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+
+
+/* --- Адаптація під різні екрани --- */
+
+/* Для планшетів (до 1024px) */
+@media (max-width: 1024px) {
+    .details-container {
+        margin-left: 50px;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .comments-container {
+        margin-right: 50px;
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+
+    .details-and-comments-container {
+        flex-direction: column;
+    }
+
+    .recipe-name {
+        font-size: 50px;
+    }
+}
+
+/* Для мобільних пристроїв (до 768px) */
+@media (max-width: 768px) {
+    .recipe-name {
+        font-size: 40px;
+    }
+
+    .cursive {
+        font-size: 28px;
+    }
+
+    .recipe-img {
+        width: 100%;
+    }
+
+    .details-container,
+    .comments-container {
+        margin: 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .ingredients-container {
+        gap: 20px;
+    }
+
+    .save-btn2,
+    .send-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Для дуже маленьких екранів (до 480px) */
+@media (max-width: 480px) {
+    .recipe-name {
+        font-size: 30px;
+    }
+
+    .cursive {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .time-numb,
+    .category-name,
+    .client-name,
+    .comment-text {
+        font-size: 14px;
+    }
+}
