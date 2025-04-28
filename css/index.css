@@ -157,11 +157,8 @@ main {
     justify-content: start; /* чтобы всё шло сверху */
     min-height: 130px;
 }
-.like-icon{
-    width: 2.2vw;
-    height: 2.2vw;
-    margin-top: 0.1vw;
-}
+
+
 
 .recipe-img {
     width: 100%;
@@ -356,96 +353,161 @@ footer .cursive-main {
 }
 
 
-
-@media (max-width: 768px) {
-    .about-us {
-        flex-direction: column;
-        align-items: center;
-        padding: 10vw 5vw;
+/* Для экранов шириной 1200px и меньше */
+@media (max-width: 1200px) {
+    .home-page-title {
+        font-size: 5vw;
     }
-
-    .about-us-text, .about-us-img {
-        width: 100%;
-        padding: 0;
-        text-align: center;
+    .cursive-main {
+        font-size: 2.2vw;
     }
-
-    .about-us-img {
-        width: 70%; /* Сделал шире */
-        margin-top: 5vw;
+    .row2-text {
+        font-size: 1.8vw;
     }
-
+    .section-title {
+        font-size: 4.5vw;
+    }
+    .about-us-text .cursive-main {
+        font-size: 2.2vw;
+    }
     .what-we-offer-text {
-        width: 90%;
+        font-size: 1.8vw;
+    }
+    .catalog-btn {
+        font-size: 1.5vw;
+    }
+    .catalog-btn2 {
+        font-size: 1.4vw;
+    }
+    footer .cursive-main {
+        font-size: 2.5vw;
+    }
+}
+
+/* Для экранов шириной 992px и меньше */
+@media (max-width: 992px) {
+    .home-page-title {
+        font-size: 7vw;
+    }
+    .cursive-main {
+        font-size: 2.5vw;
+    }
+    .row2-text {
+        font-size: 2vw;
+    }
+    .section-title {
+        font-size: 5vw;
+    }
+    .about-us-text .cursive-main {
+        font-size: 2.5vw;
+    }
+    .what-we-offer-text {
+        font-size: 2vw;
+    }
+    .catalog-btn {
+        font-size: 1.8vw;
+    }
+    .catalog-btn2 {
+        font-size: 1.6vw;
+    }
+    footer .cursive-main {
+        font-size: 2.7vw;
     }
 
     .start-page-row1 {
         flex-direction: column;
         align-items: center;
+    }
+    .start-page-img {
+        width: 50%;
+        margin-top: 6vw;
+    }
+    .start-page-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .about-us-text {
         width: 100%;
     }
-
-    .start-page-text {
-        width: 90%;
+    .about-us-img {
+        width: 70%;
+        margin-top: 2vw;
     }
 
-    .cakes {
-        margin-top: 5vw;
+    /* Что мы предлагаем */
+    .what-we-offer {
+        text-align: center; /* Текст по центру */
     }
+    .what-we-offer-text {
+        width: 100%; /* Текст на всю ширину */
+        padding: 0 4vw; /* Паддинги по бокам */
+    }
+    .catalog-btn-wrapper2 {
+        width: 100%; /* Кнопка на всю ширину */
+        display: flex;
+        justify-content: center;
+        margin-top: 3vw; /* Отступ сверху */
+    }
+    .catalog-btn2 {
+        padding: 1vw 5vw; /* Увеличиваем паддинги для кнопки */
+    }
+}
 
-    /* Теперь шрифты */
+/* Для экранов шириной 600px и меньше */
+@media (max-width: 600px) {
     .home-page-title {
-        font-size: 8vw; /* чуть крупнее на мобилках */
+        font-size: 10vw;
     }
-
     .cursive-main {
-        font-size: 5vw; /* увеличил, чтобы хорошо читалось */
+        font-size: 3.5vw;
     }
-
-    .section-title {
-        font-size: 7vw;
-    }
-
     .row2-text {
-        font-size: 4.5vw;
+        font-size: 2.5vw;
     }
-
-    .catalog-btn, .catalog-btn2 {
-        font-size: 4vw;
-        padding: 1vw 5vw;
-        border: 0.4vw solid rgb(231, 178, 62);
+    .section-title {
+        font-size: 6vw;
     }
-
-    .text-highlight, .text-highlight2 {
-        font-size: 4vw;
+    .about-us-text .cursive-main {
+        font-size: 3.5vw;
     }
-
-    .features {
-        width: 90%;
+    .what-we-offer-text {
+        font-size: 2.5vw;
     }
-
+    .catalog-btn {
+        font-size: 2vw;
+    }
+    .catalog-btn2 {
+        font-size: 1.8vw;
+    }
     footer .cursive-main {
-        font-size: 5vw;
-        padding-top: 10vw;
-        padding-bottom: 10vw;
-        width: 80%;
-    }
-
-    .like-icon {
-        width: 5vw;
-        height: 5vw;
-    }
-
-    .recipe-card {
-        width: calc(45% - 2vw); /* на мобилке карточки крупнее, по 2 в ряд */
+        font-size: 3vw;
     }
 
     .recipes-card-container {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+        justify-content: space-between; /* Распределяем элементы по ширине */
     }
 
-    .recipe-img {
-        aspect-ratio: 1/1;
+    /* Карточки рецептов */
+    .recipe-card {
+        width: 48%; /* Делаем карточки рецептов шириной 48%, чтобы было два элемента в ряду */
+        margin-bottom: 2vw; /* Отступ снизу между карточками */
+    }
+    .arrow {
+        display: none; /* Скрываем весь блок */
+    }
+    .arrow-reverse {
+        display: none; /* Скрываем весь блок */
     }
 }
+
+
+
+

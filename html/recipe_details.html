@@ -35,7 +35,7 @@
     <div class="logo-with-login">
         <img class="logo" src="/svg/logo-icon.svg" alt="">
         <div class="login-section">
-            <img src="/svg/login-icon.svg" alt="">
+            <img class="login-icon" src="/svg/login-icon.svg" alt="">
             <a class="login-btn" href="login.html">УВІЙТИ</a>
         </div>
     </div>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="time-group">
-                <img src="/svg/time-icon.svg" alt="">
+                <img class="time-icon" src="/svg/time-icon.svg" alt="">
                 <div class="time-numb">60 хвилин</div>
             </div>
             <div class="category-name">ДЕСЕРТИ</div>
@@ -153,6 +153,7 @@
             </p>
             <p class="cursive fade-in-element">Готово!</p>
         </div>
+        <hr>
         <aside class="comments-container">
             <p class="cursive fade-in-element">Коментарі</p>
             <div class="comments fade-in-element" id="commentsList">
@@ -161,11 +162,16 @@
                 <p class="client-name"><b>Іван Азарко:</b></p>
                 <p class="comment-text">Обов'язково спробую приготувати!</p>
             </div>
-            <form id="commentForm" class="fade-in-element">
-                <label>
-                    <textarea id="comment" name="comment" placeholder="Введіть коментар..."></textarea>
-                </label>
-                <button class="send-btn main-btn" type="submit">Надіслати</button>
+
+            <form style="display: flex; flex-direction: column" id="commentForm" class="fade-in-element">
+                <div>
+                    <label>
+                        <textarea id="comment" name="comment" placeholder="Введіть коментар..."></textarea>
+                    </label>
+                </div>
+                <div style="width: auto; align-self: flex-start;">
+                    <button class="send-btn main-btn" type="submit">Надіслати</button>
+                </div>
             </form>
             <div id="message" class="form-message regular-text"
                  style="font-size: 14px; line-height: 15px; margin-top: 20px"></div>
