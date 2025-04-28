@@ -4,50 +4,41 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Kaliningrad Historical G';
     src: url('/fonts/Kaliningrad Historical G/Kaliningrad_Historical_G_1.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 body {
     width: 100%;
 }
-
 main {
     display: flex;
     flex-direction: column;
     padding: 30px 110px;
 }
-
 .header {
     display: flex;
     flex-direction: column;
 }
-
 .logo-with-login {
     display: flex;
     align-items: center;
     padding: 1.2vw 7.2vw;
 }
-
 .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     height: 3.4vw;
 }
-
 .login-section {
     margin-left: auto;
 }
-
 .login-icon {
     width: 2.7vw;
 }
-
 .login-btn {
     text-decoration: none;
     color: rgb(90, 68, 68);
@@ -56,7 +47,6 @@ main {
     font-weight: 400;
     margin-left: 0.4vw;
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -64,7 +54,6 @@ nav {
     gap: 1.3vw;
     background: linear-gradient(90deg, rgb(231, 178, 62), rgb(239, 202, 120) 34.1%, rgb(247, 223, 172) 61.6%, rgb(251, 234, 197) 99.99%);
 }
-
 .nav-element {
     padding: 0.8vw 0;
     flex: 1;
@@ -76,17 +65,14 @@ nav {
     font-weight: 500;
     text-decoration: none;
 }
-
 .nav-element:hover {
     color: rgb(90, 68, 68);
 }
-
 .curr-page {
     height: 100%;
     color: rgb(183, 133, 39);
     background-color: #FFF5F3;
 }
-
 .regular-text {
     color: rgb(90, 68, 68);
     font-family: Playfair Display, serif;
@@ -94,28 +80,24 @@ nav {
     font-weight: 400;
     line-height: 1.7vw;
 }
-
 .recipe-title {
     margin-top: 1vw;
     color: #B6801B;
     font-family: Playfair Display, serif;
     font-size: 1.2vw;
     font-weight: 600;
-    overflow-wrap: break-word; /* переносит длинные слова */
-    word-wrap: break-word; /* для старых браузеров */
-    hyphens: auto; /* ставит дефисы при переносе слов */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
-
 .recipe-img {
     width: 100%;
     border-radius: 1.8vw;
 }
-
 .likes-group {
     display: flex;
     align-items: center;
 }
-
 .likes-numb {
     margin-left: 8px;
 
@@ -125,13 +107,11 @@ nav {
     font-weight: 600;
     line-height: 1.2vw;
 }
-
 .like-icon {
     width: 2.2vw;
     height: 2.2vw;
     margin-top: 0.1vw;
 }
-
 .save-btn {
     background-color: #FFF4F3;
     padding: 0.7vw 1.4vw;
@@ -142,7 +122,6 @@ nav {
     font-weight: 600;
     border-radius: 10vw;
 }
-
 input,
 textarea,
 select,
@@ -155,11 +134,9 @@ input[type="file"] {
     border: 1px solid rgb(214, 114, 114);
     border-radius: 4px;
     background: rgb(255, 255, 255);
-
     color: rgb(90, 68, 68);
     font-family: Playfair Display, serif;
 }
-
 input::placeholder,
 textarea::placeholder,
 select {
@@ -168,14 +145,12 @@ select {
     font-size: 1vw;
     font-weight: 500;
 }
-
 input:focus,
 textarea:focus,
 select:focus,
 input[type="file"]:focus {
     outline: none;
 }
-
 label {
     color: rgb(100, 83, 83);
     font-family: Playfair Display, serif;
@@ -186,7 +161,6 @@ label {
     justify-content: space-between;
     flex-grow: 1;
 }
-
 .main-btn:hover {
     border-radius: 100px;
     color: rgb(152, 110, 19);
@@ -194,41 +168,29 @@ label {
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
-
 .save-delete-fav-btn:hover {
     border-radius: 100px;
     box-shadow: 0 0 10px rgba(226, 194, 124, 0.73);
     transform: scale(1.02);
     transition: all 0.3s ease;
 }
-
-
-/* Анімація для плавної появи елементів */
 .fade-in-element {
     opacity: 0; /* Початкова прозорість */
     transform: translateY(20px); /* Початкова позиція елемента */
     transition: opacity 1s, transform 1s; /* Тривалість анімації */
 }
-
-/* Коли елемент з'являється на екрані */
 .fade-in-element.visible {
     opacity: 1;
     transform: translateY(0); /* Елемент плавно переміщається в початкову позицію */
 }
-
-/* Стиль для повідомлення форми */
 .form-message {
     opacity: 0;
     transition: opacity 0.5s ease;
     font-weight: 600;
 }
-
-/* Коли повідомлення з'являється */
 .form-message.visible {
     opacity: 1;
 }
-
-/* Стиль для модального вікна */
 .modal {
     position: fixed;
     z-index: 1;
@@ -238,8 +200,6 @@ label {
     height: 100%;
     background-color: rgba(172, 171, 171, 0.4);
 }
-
-/* Стиль для тексту в модальному вікні */
 .modalText {
     background-color: #FFF5F3;
     border-radius: 30px;
@@ -252,53 +212,37 @@ label {
     flex-direction: column;
     align-items: center;
 }
-
-/* Стиль для модального вікна при наведенні */
 .modalText:hover {
     box-shadow: 0 0 10px rgba(226, 194, 124, 0.73);
     transform: scale(1.02);
     transition: all 0.3s ease;
 }
-
-
 @media (max-width: 1200px) {
     .logo {
         height: 2.8vw;
     }
-
     .nav-element {
         font-size: 1.5vw;
     }
-
     .recipe-title {
         font-size: 1.1vw;
     }
-
     .recipe-img {
         border-radius: 1.5vw;
     }
-
     .likes-numb {
         font-size: 1.2vw;
     }
-
     .save-btn {
-        font-size: 1vw;
-        padding: 0.6vw 1.2vw;
+        font-size: 1.2vw;
+        padding: 0.6vw 1vw;
     }
-
-
-    .recipe-card {
-        width: calc(33.33% - 2vw);
-    }
-
     .regular-text, input::placeholder,
     textarea::placeholder,
     select {
         font-size: 1.8vw;
         line-height: 2vw;
     }
-
     .login-btn {
         font-size: 1.2vw;
     }
@@ -310,44 +254,35 @@ label {
         height: 2.5vw;
     }
 }
-
 @media (max-width: 992px) {
     .logo {
         height: 3.2vw;
     }
-
     .nav-element {
         font-size: 1.8vw;
     }
-
     .recipe-title {
         font-size: 1.3vw;
     }
-
     .recipe-img {
         border-radius: 2vw;
     }
-
     .likes-numb {
         font-size: 1.4vw;
     }
-
     .save-btn {
-        font-size: 1.2vw;
-        padding: 0.8vw 1.4vw;
+        font-size: 2vw;
+        padding: 0.6vw 0.9vw;
     }
-
     .regular-text, input::placeholder,
     textarea::placeholder,
     select {
         font-size: 2.2vw;
         line-height: 2.8vw;
     }
-
     .login-btn {
         font-size: 1.5vw;
     }
-
     .recipe-title, .likes-numb {
         font-size: 2vw;
     }
@@ -356,44 +291,35 @@ label {
         height: 3vw;
     }
 }
-
 @media (max-width: 600px) {
     .logo {
         height: 4vw;
     }
-
     .nav-element {
         font-size: 2vw;
     }
-
     .recipe-title {
         font-size: 1.5vw;
     }
-
     .recipe-img {
         border-radius: 3vw;
     }
-
     .likes-numb {
         font-size: 1.6vw;
     }
-
     .save-btn {
-        font-size: 1.4vw;
+        font-size: 3vw;
         padding: 1vw 2vw;
     }
-
     .regular-text, input::placeholder,
     textarea::placeholder,
     select {
         font-size: 3vw;
         line-height: 3.6vw;
     }
-
     .login-btn {
         font-size: 2vw;
     }
-
     .recipe-title, .likes-numb {
         font-size: 3vw;
     }

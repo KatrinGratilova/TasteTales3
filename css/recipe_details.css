@@ -2,41 +2,35 @@ main {
     padding: 0;
     padding-bottom: 2vw;
 }
-
 .recipe-head {
     margin-top: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .recipe-name {
     color: #CFA557;
     font-family: Kaliningrad Historical G, serif;
     font-weight: 400;
     font-size: 4.3vw;
 }
-
 .details-and-comments-container {
     display: flex;
     margin-top: 2.5vw;
 }
-
 .details-container {
-    margin-left: 13vw; /* замість 200px */
+    margin-left: 13vw;
     width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 1.7vw; /* замість 25px */
-    padding-right: 2.7vw; /* замість 40px */
+    gap: 1.7vw;
+    padding-right: 2.7vw;
 }
-
 .comments-container {
-    margin-right: 6.7vw; /* замість 100px */
+    margin-right: 6.7vw;
     width: 20%;
-    padding-left: 2.7vw; /* замість 40px */
+    padding-left: 2.7vw;
 }
-
 .cursive {
     font-family: Annabelle, serif;
     font-size: 2.5vw;
@@ -45,116 +39,94 @@ main {
     margin-bottom: 0;
     line-height: 1.5vw;
 }
-
 .recipe-elements {
     display: flex;
-    gap: 1.7vw; /* замість 25px */
+    gap: 1.7vw;
 }
-
 .time-numb,
 .category-name {
-    margin-left: 0.5vw; /* замість 8px */
-    margin-top: 0.1vw; /* замість 1px */
+    margin-left: 0.5vw;
+    margin-top: 0.1vw;
     font-family: Playfair Display, serif;
-    font-size: 1.1vw; /* замість 16px */
+    font-size: 1.1vw;
     line-height: 1.3vw;
     color: rgb(90, 68, 68);
 }
-
 .category-name {
-    margin-top: 0.7vw; /* замість 10px */
+    margin-top: 0.7vw;
 }
-
 .time-group {
     display: flex;
     align-items: center;
 }
-
 .save-btn2 {
     background-color: #FFF4F3;
-    padding: 0.5vw 1.3vw; /* замість 10px 20px */
+    padding: 0.5vw 1.3vw;
     text-decoration: none;
     color: rgb(176, 49, 64);
     font-family: Playfair Display, serif;
-    font-size: 1.1vw; /* замість 16px */
+    font-size: 1.1vw;
     font-weight: 600;
     line-height: 1.3vw;
-    border-radius: 10vw; /* замість 27.5px */
+    border-radius: 10vw;
 }
-
 .send-btn {
-    margin-top: 1vw; /* замість 15px */
+    margin-top: 1vw;
     text-decoration: none;
-    padding: 0.3vw 1.7vw; /* замість 5px 25px */
+    padding: 0.3vw 1.7vw;
     color: rgb(202, 145, 24);
     font-family: Playfair Display, serif;
-    font-size: 1.1vw; /* замість 16px */
+    font-size: 1.1vw;
     font-weight: 500;
-    border: 0.2vw solid rgb(231, 178, 62); /* замість 3px */
-    border-radius: 10vw; /* замість 100px */
+    border: 0.2vw solid rgb(231, 178, 62);
+    border-radius: 10vw;
     background: rgb(255, 255, 255);
-    box-shadow: 0.3vw 0.5vw 2vw 0 rgba(131, 129, 129, 0.25); /* замість 5px 10px 40px */
+    box-shadow: 0.3vw 0.5vw 2vw 0 rgba(131, 129, 129, 0.25);
 }
-
 .details-and-comments-container .cursive {
     color: rgb(182, 128, 27);
 }
-
 .recipe-img {
     width: 80%;
     border-radius: 0;
 }
-
 .ingredients-container {
     display: flex;
-    gap: 3.3vw; /* замість 50px */
+    gap: 3.3vw;
 }
-
 aside {
-    border-left: 0.1vw solid #ccc; /* замість 1px */
+    border-left: 0.1vw solid #ccc;
 }
-
 .client-name {
     color: rgb(90, 68, 68);
     font-family: Playfair Display, serif;
     font-size: 1.1vw;
     font-weight: 500;
 }
-
 .comment-text {
     color: rgb(90, 68, 68);
     font-family: Playfair Display, serif;
     font-size: 1vw;
     font-weight: 400;
 }
-
 .comments {
-    margin-top: 2vw; /* замість 30px */
+    margin-top: 2vw;
 }
-
 label {
-    margin-top: 2vw; /* замість 30px */
-    font-size: 1.3vw; /* замість 18px */
+    margin-top: 2vw;
+    font-size: 1.3vw;
 }
-
 footer {
-    padding-top: 1.3vw; /* замість 20px */
-    padding-bottom: 0.7vw; /* замість 10px */
+    padding-top: 1.3vw;
+    padding-bottom: 0.7vw;
     display: flex;
     justify-content: center;
 }
-
 .time-icon{
     width: 2vw;
     height: 2vw;
     margin-top: 0.1vw;
 }
-
-
-
-
-/* Базові стилі залишаються такі, як ти надіслав */
-
 @media (max-width: 1200px) {
     .recipe-name {
         font-size: 5vw;
@@ -188,7 +160,6 @@ footer {
         height: 2.5vw;
     }
 }
-
 @media (max-width: 992px) {
     .recipe-head {
         margin-top: 5vw;
@@ -243,14 +214,13 @@ footer {
         border-left: none;
     }
     hr {
-        width: 90%; /* ширина почти на всю страницу */
-        margin: 3vw auto; /* отступы и по центру */
-        border: none; /* убираем старую рамку */
-        height: 2px; /* делаем толщину линии */
-        background-color: #CFA557; /* красивый золотистый цвет */
+        width: 90%;
+        margin: 3vw auto;
+        border: none;
+        height: 2px;
+        background-color: #CFA557;
     }
 }
-
 @media (max-width: 600px) {
     .recipe-name {
         font-size: 8vw;
@@ -297,10 +267,10 @@ footer {
         border-left: none;
     }
     hr {
-        width: 90%; /* ширина почти на всю страницу */
-        margin: 3vw auto; /* отступы и по центру */
-        border: none; /* убираем старую рамку */
-        height: 2px; /* делаем толщину линии */
-        background-color: #CFA557; /* красивый золотистый цвет */
+        width: 90%;
+        margin: 3vw auto;
+        border: none;
+        height: 2px;
+        background-color: #CFA557;
     }
 }
