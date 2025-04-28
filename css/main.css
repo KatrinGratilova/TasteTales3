@@ -240,3 +240,77 @@ label {
     transform: scale(1.02);
     transition: all 0.3s ease;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ===== АДАПТАЦІЯ ===== */
+
+@media (max-width: 1024px) {
+    .login-btn {
+        font-size: 1.5vw;
+    }
+    .nav-element {
+        font-size: 1.8vw;
+    }
+    .regular-text, .likes-numb, .recipe-title {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-with-login {
+        padding: 2vw 4vw;
+    }
+    .logo {
+        height: 6vw;
+    }
+    .login-btn {
+        font-size: 2vw;
+    }
+    .nav-element {
+        font-size: 2.5vw;
+    }
+    .regular-text, .likes-numb, .recipe-title {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .save-btn {
+        font-size: 14px;
+    }
+    label {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px 5vw;
+    }
+    .logo {
+        height: 10vw;
+    }
+    .login-btn {
+        font-size: 3.5vw;
+    }
+    .nav-element {
+        font-size: 4vw;
+    }
+    .regular-text, .likes-numb, .recipe-title {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+    .save-btn {
+        font-size: 13px;
+    }
+    label {
+        font-size: 16px;
+    }
+}
