@@ -55,7 +55,7 @@ nav {
     background: linear-gradient(90deg, rgb(231, 178, 62), rgb(239, 202, 120) 34.1%, rgb(247, 223, 172) 61.6%, rgb(251, 234, 197) 99.99%);
 }
 .nav-element {
-    padding: 0.8vw 0;
+    padding: 1vw 0;
     flex: 1;
     max-width: 13vw;
     text-align: center;
@@ -291,12 +291,12 @@ label {
         height: 3vw;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .logo {
         height: 4vw;
     }
     .nav-element {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .recipe-title {
         font-size: 1.5vw;
@@ -318,7 +318,7 @@ label {
         line-height: 3.6vw;
     }
     .login-btn {
-        font-size: 2vw;
+        font-size: 2.3vw;
     }
     .recipe-title, .likes-numb {
         font-size: 3vw;
@@ -326,5 +326,8 @@ label {
     .like-icon {
         width: 4vw;
         height: 4vw;
+    }
+    nav {
+        gap:4vw;
     }
 }

@@ -41,8 +41,8 @@ main {
     font-weight: 400;
     line-height: 1.1;
     margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 .start-page .cursive-main {
     opacity: 0;
@@ -363,7 +363,7 @@ footer .cursive-main {
         min-height: 270px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .home-page-title {
         font-size: 10vw;
     }
@@ -388,9 +388,7 @@ footer .cursive-main {
     .catalog-btn2 {
         font-size: 1.8vw;
     }
-    footer .cursive-main {
-        font-size: 3vw;
-    }
+
     .recipes-card-container {
         display: flex;
         flex-wrap: wrap;
@@ -407,6 +405,14 @@ footer .cursive-main {
         display: none;
     }
     .recipe-card {
-        min-height: 220px;
+        min-height: 100px;
     }
+    .catalog-btn, .catalog-btn2 {
+        font-size: 4vw;
+        padding: 1vw 6vw;
+    }
+    footer .cursive-main, .cursive-main, .about-us-text .cursive-main {
+        font-size: 4.5vw;
+    }
+
 }
