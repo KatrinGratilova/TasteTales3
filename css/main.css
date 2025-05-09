@@ -296,7 +296,7 @@ label {
         height: 4vw;
     }
     .nav-element {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .recipe-title {
         font-size: 1.5vw;
@@ -327,6 +327,9 @@ label {
         width: 4vw;
         height: 4vw;
     }
+    nav {
 
+        gap:3vw;
+    }
 
 }
