@@ -280,6 +280,8 @@ footer {
     .recipe-elements {
         height: auto;
         gap: 2vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .page-numbers {
@@ -299,15 +301,13 @@ footer {
         font-size: 3.7vw;
     }
     .filter-option-icon {
-        margin-top: 0vw;
-        margin-bottom: 2vw;
-        height: 3vw;
-        width: 3vw;
+        height: 3.5vw;
+        width: 3.5vw;
         margin-right: 1vw;
         margin-left: 1vw;
     }
     .option p{
         margin-top: 1vw;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 }
