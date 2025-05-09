@@ -310,4 +310,8 @@ footer {
         margin-top: 1vw;
         font-size: 3.5vw;
     }
+    .info-and-filters {
+        flex-direction: column;
+        gap: 3vw;
+    }
 }

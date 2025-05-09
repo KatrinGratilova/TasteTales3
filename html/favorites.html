@@ -47,7 +47,7 @@
         </div>
     </div>
     <nav>
-        <a class="nav-element" href="index.html">ПРО САЙТ</a>
+        <a class="nav-element" href="index.html">ПРО НАШ САЙТ</a>
         <a class="nav-element" href="catalog.html">КАТАЛОГ РЕЦЕПТІВ</a>
         <a class="nav-element curr-page" href="favorites.html">ОБРАНІ РЕЦЕПТИ</a>
         <a class="nav-element" href="adding_recipe.html">ДОДАТИ РЕЦЕПТ</a>
@@ -118,6 +118,24 @@
                     <p>Основні страви</p>
                 </div>
             </div>
+
+
+            <script>
+                function moveFilterBtn() {
+                    const btn = document.querySelector('.filter-btn-wrapper');
+                    const section = document.querySelector('.info-and-filters');
+
+                    if (window.innerWidth <= 768) {
+                        section.appendChild(btn);
+                    } else {
+                        const wrapper = document.querySelector('.catalog-info-wrapper');
+                        wrapper.appendChild(btn);
+                    }
+                }
+
+                window.addEventListener('resize', moveFilterBtn);
+                window.addEventListener('DOMContentLoaded', moveFilterBtn);
+            </script>
         </section>
         <div class="container_recipes">
             <div class="recipie-element fade-in-element" data-category="desserts">
@@ -132,9 +150,9 @@
                         <div class="likes-numb">988
                         </div>
                     </div>
-                    <a class="save-btn save-delete-fav-btn" href="#">Видалити</a>
+<!--                    <a class="save-btn save-delete-fav-btn" href="#">Видалити</a>-->
                     <a class="recipe-det-btn" href="recipe_details.html">
-                        <img src="/svg/recipe-details-icon.svg" alt="">
+                        <img class="recipe-det" src="/svg/recipe-details-icon.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -150,9 +168,9 @@
                         <div class="likes-numb">1239
                         </div>
                     </div>
-                    <a class="save-btn save-delete-fav-btn" href="#">Видалити</a>
+<!--                    <a class="save-btn save-delete-fav-btn" href="#">Видалити</a>-->
                     <a class="recipe-det-btn" href="recipe_details.html">
-                        <img src="/svg/recipe-details-icon.svg" alt="">
+                        <img class="recipe-det" src="/svg/recipe-details-icon.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -168,9 +186,9 @@
                         <div class="likes-numb">879
                         </div>
                     </div>
-                    <a class="save-btn save-delete-fav-btn" href="#">Видалити</a>
+<!--                    <a class="save-btn save-delete-fav-btn" href="#">Видалити</a>-->
                     <a class="recipe-det-btn" href="recipe_details.html">
-                        <img src="/svg/recipe-details-icon.svg" alt="">
+                        <img class="recipe-det" src="/svg/recipe-details-icon.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -186,9 +204,9 @@
                         <div class="likes-numb">340
                         </div>
                     </div>
-                    <a class="save-btn save-delete-fav-btn" href="#">Видалити</a>
+<!--                    <a class="save-btn save-delete-fav-btn" href="#">Видалити</a>-->
                     <a class="recipe-det-btn" href="recipe_details.html">
-                        <img src="/svg/recipe-details-icon.svg" alt="">
+                        <img class="recipe-det" src="/svg/recipe-details-icon.svg" alt="">
                     </a>
                 </div>
             </div>

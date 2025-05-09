@@ -43,11 +43,25 @@ form {
     box-shadow: 5px 10px 40px 0 rgba(131, 129, 129, 0.25);
 }
 
-.cursive {
+/*.cursive {*/
+/*    align-self: center;*/
+/*    padding-top: 25px;*/
+/*    padding-bottom: 15px;*/
+/*    font-family: Annabelle, serif;*/
+/*    font-size: 35px;*/
+/*    font-weight: 400;*/
+/*    line-height: 40px;*/
+/*    color: #B6801B;*/
+/*}*/
+
+.cursive-main {
+    font-family: Annabelle, serif;
+
+    margin: 0;
+
     align-self: center;
     padding-top: 25px;
     padding-bottom: 15px;
-    font-family: Annabelle, serif;
     font-size: 35px;
     font-weight: 400;
     line-height: 40px;
@@ -57,4 +71,27 @@ form {
 footer {
     align-self: center;
     margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+    form {
+        width: 80%; /* или 100%, если нужно на всю ширину */
+        padding: 15px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .add-btn {
+        font-size: 4vw;
+        padding: 1vw 6vw;
+        border: 0.4vw solid rgb(231, 178, 62);
+    }
+
+    .cursive-main {
+        font-size: 4.5vw;
+    }
 }

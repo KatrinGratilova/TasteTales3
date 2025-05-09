@@ -330,4 +330,8 @@ label {
     nav {
         gap:4vw;
     }
+    .login-icon {
+        height: 4vw;
+        width: 4vw;
+    }
 }
