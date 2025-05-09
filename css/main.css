@@ -311,7 +311,7 @@ label {
     .regular-text, input::placeholder,
     textarea::placeholder,
     select {
-        font-size: 3.5vw;
+        font-size: 3.1vw;
         line-height: 3.6vw;
     }
     .login-btn {
@@ -333,5 +333,15 @@ label {
     .login-icon {
         height: 4vw;
         width: 4vw;
+    }
+    label {
+        color: rgb(100, 83, 83);
+        font-family: Playfair Display, serif;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
     }
 }
