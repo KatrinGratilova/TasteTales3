@@ -259,7 +259,7 @@ footer {
         height: 4vw;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .filter-btn {
         font-size: 4vw;
         padding: 3vw 10vw;
