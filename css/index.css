@@ -404,6 +404,9 @@ footer .cursive-main {
     .arrow-reverse {
         display: none;
     }
+    .recipe-card {
+        min-height: 100px;
+    }
     .catalog-btn, .catalog-btn2 {
         font-size: 4vw;
         padding: 1vw 6vw;
