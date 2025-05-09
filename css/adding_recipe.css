@@ -85,6 +85,58 @@ textarea,
     color: #B6801B;
 }
 
+
+@media (max-width: 990px) {
+    main {
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+
+    .form-container {
+        margin-left: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .cursive {
+        align-self: center;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-family: Annabelle, serif;
+        font-weight: 400;
+        line-height: 30px;
+        color: #B6801B;
+        font-size: 6vw;
+    }
+
+    .add-btn {
+        font-size: 4vw;
+        padding: 1vw 6vw;
+        border: 0.4vw solid rgb(231, 178, 62);
+    }
+
+    textarea,
+    .img-upload-icon,
+    select {
+        flex-grow: 1;
+        height: 50px;
+        min-height: 50px;
+    }
+
+    .category {
+        height: 44px;
+        min-height: 40px;
+    }
+
+    .img-upload-icon {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
 @media (max-width: 576px) {
     main {
         flex-direction: column;

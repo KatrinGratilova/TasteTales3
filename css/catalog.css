@@ -305,9 +305,11 @@ footer {
         width: 3.5vw;
         margin-right: 1vw;
         margin-left: 1vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
     .option p{
-        margin-top: 1vw;
+        margin-top: 2vw;
         font-size: 3.5vw;
     }
     .info-and-filters {
