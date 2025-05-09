@@ -116,10 +116,16 @@ textarea,
     }
 
     textarea,
-    .img-upload-icon {
+    .img-upload-icon,
+    select {
         flex-grow: 1;
         height: 50px;
         min-height: 50px;
+    }
+
+    .category {
+        height: 44px;
+        min-height: 40px;
     }
 
     .img-upload-icon {
