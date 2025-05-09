@@ -311,7 +311,7 @@ label {
     .regular-text, input::placeholder,
     textarea::placeholder,
     select {
-        font-size: 3.1vw;
+        font-size: 3.9vw;
         line-height: 3.6vw;
     }
     .login-btn {
