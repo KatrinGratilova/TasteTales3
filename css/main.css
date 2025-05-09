@@ -55,7 +55,7 @@ nav {
     background: linear-gradient(90deg, rgb(231, 178, 62), rgb(239, 202, 120) 34.1%, rgb(247, 223, 172) 61.6%, rgb(251, 234, 197) 99.99%);
 }
 .nav-element {
-    padding: 0.8vw 0;
+    padding: 1vw 0;
     flex: 1;
     max-width: 13vw;
     text-align: center;
@@ -328,8 +328,6 @@ label {
         height: 4vw;
     }
     nav {
-
-        gap:3vw;
+        gap:4vw;
     }
-
 }
