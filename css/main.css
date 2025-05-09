@@ -304,9 +304,6 @@ label {
     .recipe-img {
         border-radius: 3vw;
     }
-    .likes-numb {
-        font-size: 1.6vw;
-    }
     .save-btn {
         font-size: 3vw;
         padding: 1vw 2vw;
@@ -322,10 +319,13 @@ label {
     }
     .recipe-title, .likes-numb {
         font-size: 3vw;
+        margin-left: 0.4vw;
+        margin-bottom: 0.9vw;
     }
     .like-icon {
         width: 4vw;
         height: 4vw;
+
     }
     nav {
         gap:4vw;

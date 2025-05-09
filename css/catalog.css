@@ -269,11 +269,13 @@ footer {
         font-size: 4vw;
     }
     .recipie-element {
+        border-radius: 5vw;
         width: calc(50% - 2vw);
+        padding: 2.7vw;
     }
     .recipe-desc {
-        font-size: 4vw;
-        line-height: 5vw;
+        font-size: 3.5vw;
+        line-height: 4.2vw;
     }
     .recipe-elements {
         height: auto;
@@ -295,5 +297,17 @@ footer {
     }
     .recipe-title, .likes-numb {
         font-size: 3.7vw;
+    }
+    .filter-option-icon {
+        margin-top: 0vw;
+        margin-bottom: 2vw;
+        height: 3vw;
+        width: 3vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+    .option p{
+        margin-top: 1vw;
+        font-size: 3vw;
     }
 }
