@@ -64,7 +64,6 @@ form {
     padding-bottom: 15px;
     font-size: 35px;
     font-weight: 400;
-    line-height: 40px;
     color: #B6801B;
 }
 
@@ -92,6 +91,6 @@ footer {
     }
 
     .cursive-main {
-        font-size: 4.5vw;
+        font-size: 6vw;
     }
 }
