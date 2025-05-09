@@ -72,6 +72,19 @@ footer {
     margin-top: 50px;
 }
 
+@media (max-width: 990px) {
+    form {
+        width: 80%; /* или 100%, если нужно на всю ширину */
+        padding: 15px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+}
+
 @media (max-width: 576px) {
     form {
         width: 80%; /* или 100%, если нужно на всю ширину */
