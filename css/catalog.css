@@ -260,9 +260,10 @@ footer {
     }
 }
 @media (max-width: 576px) {
-    .filter-btn {
+    .filter-btn, .show-more-btn{
         font-size: 4vw;
-        padding: 3vw 10vw;
+        padding: 1vw 6vw;
+        border: 0.3vw solid rgb(231, 178, 62);
     }
     .filters p, .all-recipes-option {
         font-size: 4vw;
@@ -278,23 +279,21 @@ footer {
         height: auto;
         gap: 2vw;
     }
-    .show-more-btn {
-        font-size: 4vw;
-        padding: 3vw 10vw;
-    }
+
     .page-numbers {
         font-size: 4vw;
     }
-    .page-arrow {
+    .page-arrow, .page-arrow-reverse {
+        margin-top: 6px;
         width: 5vw;
         height: 5vw;
     }
-    .page-arrow-reverse {
-        width: 5vw;
-        height: 5vw;
-    }
+
     .recipe-det{
         width: 6vw;
         height: 6vw;
+    }
+    .recipe-title, .likes-numb {
+        font-size: 3.7vw;
     }
 }
