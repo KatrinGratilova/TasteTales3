@@ -44,27 +44,27 @@ window.onclick = function (event) {
     if (event.target === modal)
         closeModal();
 }
-//
-// // Функція для додавання класу "visible" при прокручуванні сторінки, щоб забезпечити плавне проявлення контенту
-// function handleScroll() {
-//     // Отримуємо всі елементи з класом "fade-in-element"
-//     let elements = document.querySelectorAll('.fade-in-element');
-//
-//     // Визначаємо поточну позицію прокрутки (висота вікна + прокручена частина)
-//     let scrollPosition = window.innerHeight + window.scrollY;
-//
-//     // Перебираємо всі елементи і додаємо клас "visible", якщо елемент вже видно на екрані
-//     elements.forEach(element => {
-//         // Якщо верхня частина елемента знаходиться вище або на рівні поточної позиції прокрутки
-//         if (scrollPosition > element.offsetTop) {
-//             element.classList.add('visible');  // Додаємо клас "visible" для анімації
-//         }
-//     });
-// }
-//
-// // Обробник події для прокрутки
-// // Кожен раз, коли користувач прокручує сторінку, викликається функція handleScroll
-// window.addEventListener('scroll', handleScroll);
-//
-// // Викликаємо функцію при завантаженні сторінки, щоб елементи одразу з'являлися, якщо їх вже видно
-// window.addEventListener('load', handleScroll);
+
+// Функція для додавання класу "visible" при прокручуванні сторінки, щоб забезпечити плавне проявлення контенту
+function handleScroll() {
+    // Отримуємо всі елементи з класом "fade-in-element"
+    let elements = document.querySelectorAll('.fade-in-element');
+
+    // Визначаємо поточну позицію прокрутки (висота вікна + прокручена частина)
+    let scrollPosition = window.innerHeight + window.scrollY;
+
+    // Перебираємо всі елементи і додаємо клас "visible", якщо елемент вже видно на екрані
+    elements.forEach(element => {
+        // Якщо верхня частина елемента знаходиться вище або на рівні поточної позиції прокрутки
+        if (scrollPosition > element.offsetTop) {
+            element.classList.add('visible');  // Додаємо клас "visible" для анімації
+        }
+    });
+}
+
+// Обробник події для прокрутки
+// Кожен раз, коли користувач прокручує сторінку, викликається функція handleScroll
+window.addEventListener('scroll', handleScroll);
+
+// Викликаємо функцію при завантаженні сторінки, щоб елементи одразу з'являлися, якщо їх вже видно
+window.addEventListener('load', handleScroll);
